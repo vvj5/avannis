@@ -1658,11 +1658,8 @@ html {
 /**
  * Remove default margin.
  */
-
-/*PAGE COLOR*/
-
 body {
-  background-color: #dddddd;
+  background-color: #dae5f3;
   margin: 0; }
 
 /* HTML5 display definitions
@@ -5541,6 +5538,22 @@ small {
     .flow-text {
       font-size: 1.2rem; } }
 
+.card-container {
+  width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-panel {
+  min-width: 350px;
+  margin: 10px;
+}
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  transition: box-shadow .25s;
+   }
   .card .card-title {
     color: #fff;
     font-size: 24px;
@@ -5632,89 +5645,37 @@ small {
       cursor: pointer;
       display: block; }
 
-
-
-.card-container {
-  width: 100%;
-  padding: 20px;
-}
-
-.card-aligner {
-  width: 90%;
-}
-
-.card-panel {
-}
-
-.card {
-  width: 100%;
-  background-color: #fff;
-  transition: box-shadow .25s;
-   }
-
-
-/*MEDIA QUERIES   */
-
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
-
-  .card-aligner {
-    width: 350px;
-    margin-right: auto;
-    margin-left: auto;
-    }
-
-  .card-panel {
-    max-width: 350px;
-    margin: 20px;
-    float: left-right;
-  }
-}
-
-@media only screen and (max-width : 830px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
-
-  .card-aligner {
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .card-panel {
+   .card-panel {
       width: 100%;
-      margin: 20px;
-      float: left-right;
-  }
+      margin: 10px;
+      float: left;
+    }
 }
-@media only screen and (max-width : 1160px) and (min-width : 831px) {
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .card-panel {
+      min-width: 50%;
+      margin: 10px;
+      float: left;
+    }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
    /* Small desktop / ipad view: 3 tiles */
-
-  .card-aligner {
-    width: 780px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .card-panel {
-    width: 350px;
-    margin: 20px;
-    float: left;
-  }
+   .card-panel {
+      min-width: 33%;
+      margin: 10px;
+      float: left;
+    }
 }
-@media only screen and (max-width : 1290px) and (min-width : 1161px) {
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
-
-  .card-aligner {
-    width: 1120px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .card-panel {
-    width: 350px;
-    margin: 10px;
-    float: left;
-  }
+   .card-panel {
+      min-width: 25%;
+      margin: 10px;
+      float: left;
+    }
 }
 
 #toast-container {
