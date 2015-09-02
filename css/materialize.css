@@ -5706,7 +5706,7 @@ small {
     float: left;
   }
 }
-@media only screen and (max-width : 1290px) and (min-width : 1161px) {
+@media only screen and (min-width : 1161px) {
    /* Medium desktop: 4 tiles */
 
   .card-aligner {
