@@ -6,56 +6,56 @@
   <title>AVANNIS</title>
 
   <!-- CSS  -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
   <nav role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="images/avannis_logo_white.svg"></a>
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">
+        <img src="images/avannis_logo_white.svg"></a>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">HOME</a></li>
-      </ul>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content right hide-on-med-and-down">
+          <li><a href="#!">one</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">HOME</a></li>
-      </ul>
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <li>
+            <a class="dropdown-button" href="#!" data-activates="dropdown1">ADMIN<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li>
+            <a class="dropdown-button" href="#!" data-activates="dropdown1">DASHBOARDS<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li class="right hide-on-med-and-down"><a href="#">QUESTIONS</a>
+          </li>
+          <li id="nav-mobile" class="side-nav">
+            <a href="#">QUESTIONS</a>
+          </li>
+          <li class="right hide-on-med-and-down"><a href="#">FEEDBACK</a>
+          </li>
+          <li id="nav-mobile" class="side-nav">
+            <a href="#">FEEDBACK</a>
+          </li>
+          <li class="right hide-on-med-and-down"><a href="#">SURVEYS</a>
+          </li>
+          <li id="nav-mobile" class="side-nav">
+            <a href="#">SURVEYS</a>
+          </li>
+        </ul>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">TIME PERIODS</a></li>
-      </ul>
+           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">TIME PERIODS</a></li>
-      </ul>
-
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">SURVEYS</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">SURVEYS</a></li>
-      </ul>
-
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">COMBINED</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">COMBINED</a></li>
-      </ul>
-
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">ORGANIZATION</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">ORGANIZATION</a></li>
-      </ul>
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
+        </div>
+      </nav>
     </div>
   </nav>
 
@@ -68,7 +68,7 @@
             <div class="card-panel">
               <div class="card small">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 1 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
@@ -77,7 +77,7 @@
             <div class="card-panel">
               <div class="card small">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 2 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
@@ -86,38 +86,39 @@
             <div class="card-panel">
               <div class="card small">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 3 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
             </div>
 
             <div class="card-panel">
-              <div class="card small">
+              <div class="card medium">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 4 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
             </div>
 
             <div class="card-panel">
-              <div class="card small">
+              <div class="card medium">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 5 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
             </div>
 
             <div class="card-panel">
-              <div class="card small">
+              <div class="card medium">
                 <div class="card-action">
-                CARD TITLE
+                GRAPH 6 TITLE
                 </div>
                 <img src="images/sample-1.jpg">
               </div>
             </div>
+
         </div>
       </div>
     </div>
@@ -128,72 +129,63 @@
   <div class="section">
     <div class="row">
       <div class="icon-block">
-        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-        <h5 class="center">Speeds up development</h5>
-
-        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+        <h2 class="center icon-color"><i class="material-icons">flash_on</i></h2>
+        <h5 class="center">Research Solutions</h5>
+        <p class="light">Financial institutions across North America use Avannis research tools, analytics and expertise to create highly competitive service experiences for their customers.  Select any combination of our surveys, methodologies, and tracking tools to create your own unique measurement and feedback system.  All of our services include expertise and guidance if you want to use it, and dedicated, professional support.</p>
       </div>
+      <div class="icon-block">
+        <h2 class="center icon-color"><i class="material-icons">group</i></h2>
+        <h5 class="center">Surveys</h5>
+        <p class="light">Avannis surveys are designed to help financial institutions create a differentiated service experience for their customers. Whether you want to get a quick pulse of how your customers are feeling, do a deep dive analysis, or track customer satsifaction from month-to-month, Avannis has the right set of questions and analytics for achieving your goals.  Our surveys can be used in their original form or they can be customized to your specific goals.</p>
+      </div>
+      <div class="icon-block">
+        <h2 class="center icon-color"><i class="material-icons">settings</i></h2>
+        <h5 class="center">Training & Coaching</h5>
 
-
-
-
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-          <h5 class="center">User Experience Focused</h5>
-
-          <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-        </div>
-
-
-
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-          <h5 class="center">Easy to work with</h5>
-
-          <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-        </div>
+        <p class="light">Avannis is your partner in achieving, not just measuring, best-in-class service. Providing proper feedback, training and coaching are key elements of any successful service delivery initiative. Avannis provides training and support that will help your financial institution know what to do with customer feedback.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <footer class="page-footer orange">
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Avannis</h5>
+        <p class="grey-text text-lighten-4">Avannis provides a full range of tools and services for financial institutions to measure and improve customer satisfaction and loyalty.</p>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Pages</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
+    <a class="grey-text" href="http://blacklightsolutions.com">Made by </a>
+    <a class="black-text " href="http://blacklightsolutions.com"> Black</a> <a class="orange-text" href="http://blacklightsolutions.com">light </a><a class="grey-text" href="http://blacklightsolutions.com"> Solutions</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../bin/materialize.js"></script>
-  <script src="js/init.js"></script>
-
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../../bin/materialize.js"></script>
+<script src="js/init.js"></script>
 
 </html>

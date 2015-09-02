@@ -1659,11 +1659,16 @@ html {
  * Remove default margin.
  */
 
-/*PAGE COLOR*/
+/*SITE COLORS*/
 
 body {
   background-color: #dddddd;
   margin: 0; }
+
+.icon-color {
+  /*color: #2F588B;*/
+  color: #ffffff;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -2180,7 +2185,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73; }
+  background-color: #2F588B; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -5262,6 +5267,10 @@ nav a {
 nav .nav-wrapper {
   position: relative;
   height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  /*background-color: red;*/
     }
 
 nav .nav-wrapper i {
@@ -5274,10 +5283,6 @@ nav .nav-wrapper-sub {
   height: 30px;
   line-height: 30px;
   background-color: #999999; }
-
-nav .nav-wrapper i {
-  display: block;
-  font-size: 2rem; }
 
   @media only screen and (min-width : 993px) {
     nav a.button-collapse {
@@ -5601,12 +5606,12 @@ small {
     .card .card-content .card-title {
       line-height: 48px; }
   .card .card-action {
-    border-bottom: 1px dashed rgba(160, 160, 160, 0.2);
+    border-bottom: 1px dashed #cccccc;
     padding: 10px;
     text-align: left;
     font-weight: bold;
-    color: #666666;
-    background-color: #eeeeee; }
+    color: #999999;
+    background-color: #ffffff; }
     .card .card-action a {
       color: #ffab40;
       margin-right: 20px;
